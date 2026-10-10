@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sign Up | Little Egypt Storm Spotters</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="signup-page">
+    <nav class="site-nav" aria-label="Main">
+        <ul>
+            <li><a href="index.html">Home &amp; Radar</a></li>
+            <li><a href="inaction.html">In Action</a></li>
+            <li><a href="signup.html" aria-current="page">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="inner">
+            <h1>Sign up</h1>
+            <p class="tagline">Registration is free for all ages.</p>
+            <p>Classes teach you how to recognize severe weather, stay safe, and send reports to the National Weather Service.</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Register for a class</h2>
+
+            <form id="signup-form">
+                <div>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                </div>
+
+                <div>
+                    <label for="phone">Phone <span class="hint">(optional)</span></label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel">
+                </div>
+
+                <div>
+                    <label for="age">Age group</label>
+                    <select id="age" name="age" required>
+                        <option value="">Choose one</option>
+                        <option>Under 13 (with a parent or guardian)</option>
+                        <option>13&ndash;17</option>
+                        <option>18 and older</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="session">Preferred class</label>
+                    <select id="session" name="session" required>
+                        <option value="">Choose one</option>
+                        <option>Weekday evening</option>
+                        <option>Saturday morning</option>
+                        <option>Online</option>
+                    </select>
+                </div>
+
+                <label class="check" for="agree">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    I understand spotters report what they see safely and never chase storms.
+                </label>
+
+                <div>
+                    <button class="button" type="submit">Register now</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Local storage container to show saved sign-ups -->
+        <section class="storage-section">
+            <h2>Recent Local Registrations</h2>
+            <p>Stored locally in your browser storage:</p>
+            <ul id="storage-list">
+                <li>No registrations saved yet.</li>
+            </ul>
+            <button class="button" id="clear-storage" type="button">Clear Stored Data</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="inner">
+            <p>Questions? Email <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+    </footer>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

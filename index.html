@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Little Egypt Storm Spotters</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+
+<body class="home-page">
+    <nav class="site-nav" aria-label="Main">
+        <ul>
+            <li><a href="index.html" aria-current="page">Home &amp; Radar</a></li>
+            <li><a href="inaction.html">In Action</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="inner">
+            <h1>Little Egypt Storm Spotters</h1>
+            <p class="tagline">See it coming. Report what you see.</p>
+            <p>Trained spotters are the eyes under the radar beam.</p>
+            <p>Want to help the community stay on top of weather? Join a free class and learn to report severe weather to the National Weather Service.</p>
+            <a class="button" href="signup.html">Sign up for a class</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="radar" id="radar">
+            <h2>Live radar</h2>
+            <iframe src="https://radar.weather.gov/"
+                    title="Live National Weather Service radar"></iframe>
+            <p><a href="https://radar.weather.gov/" target="_blank" rel="noopener">Open radar in a new tab</a>
+               if the map above doesn't load.</p>
+
+            <h3>How to read the radar</h3>
+            <p>Colors show how strongly energy bounces back to the radar dish, which tells you how intense the precipitation is. Spotters fill in what radar cannot see from the ground.</p>
+            <ul class="legend">
+                <li class="green">Green: Steady light rain</li>
+                <li class="yellow">Yellow: Moderate rain</li>
+                <li class="orange">Orange: Heavy rain</li>
+                <li class="red">Red: Very heavy rain or torrential downpours</li>
+                <li class="magenta">Magenta: Extreme rainfall, possible hail</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Severe Weather Audio Sample</h2>
+            <p>Listen to a sample storm sound tracked by our spotters:</p>
+            <audio controls>
+                <source src="sound.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section>
+            <h2>See what spotters have seen</h2>
+            <p>Southern Illinois has a long history of severe weather. Browse some of the storms and events that shaped our region.</p>
+            <a class = "button" href="inaction.html">Go to In Action</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="inner">
+            <p>Questions? Email <a href="mailto:info@example.com">info@example.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
